@@ -33,7 +33,7 @@ cd claude-code-plugin
 ```
 
 ```sh
-claude --plugin-dir ./plugins/claude-code
+claude --plugin-dir .
 ```
 
 In Claude Code, open `/mcp`, select the plugin's Trunk server, and authenticate
@@ -65,7 +65,7 @@ Claude Code's plugin cache; after package changes, bump the plugin version and
 update the installed plugin, or use `--plugin-dir` for development. Avoid loading
 both the installed plugin and the development copy in the same session.
 
-The root `.claude-plugin/marketplace.json` points to `plugins/claude-code`.
+The root `.claude-plugin/marketplace.json` points to the repository root (`./`).
 The plugin package is self-contained and does not require a Trunk source checkout.
 
 ## Self-hosted and local Trunk
@@ -74,7 +74,7 @@ The default endpoint is `https://api.trunk.dev/mcp`. Set the full API MCP URL
 before launching Claude Code to target another installation:
 
 ```sh
-TRUNK_MCP_URL=https://api.example.com/mcp claude --plugin-dir ./plugins/claude-code
+TRUNK_MCP_URL=https://api.example.com/mcp claude --plugin-dir .
 ```
 
 For local development, use `TRUNK_MCP_URL=http://localhost:4244/mcp` with the API
@@ -93,8 +93,8 @@ a manually configured Trunk MCP server, disable the duplicate connection in
 From the repository root:
 
 ```sh
-claude plugin validate ./plugins/claude-code
-claude plugin validate .
+claude plugin validate .claude-plugin/plugin.json
+claude plugin validate .claude-plugin/marketplace.json
 ```
 
 Then load with `--plugin-dir`, authenticate, and run `/trunk:inspect` against an

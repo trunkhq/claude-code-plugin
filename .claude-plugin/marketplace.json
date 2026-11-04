@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "trunk",
-      "source": "./plugins/claude-code",
+      "source": "./",
       "description": "Inspect repositories, propose changes, and follow evidence through Trunk."
     }
   ]

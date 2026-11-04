@@ -1,6 +1,6 @@
 {
   "name": "trunk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Agent-first version control: inspect source, propose changes, and follow checks and decisions through Trunk.",
   "author": {
     "name": "Trunk"
