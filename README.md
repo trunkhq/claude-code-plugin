@@ -17,7 +17,7 @@ There are no install scripts, background hooks, or bundled credentials.
 In a terminal with Claude Code installed:
 
 ```sh
-claude plugin marketplace add trunkhq/claude-code-plugin
+claude plugin marketplace add trunkhq/trunk-claude-code-plugin
 claude plugin install trunk@trunk
 ```
 
@@ -28,8 +28,8 @@ Start Claude Code and authenticate the plugin's Trunk server through `/mcp`.
 Clone this repository, then run from its root with Claude Code installed:
 
 ```sh
-git clone https://github.com/trunkhq/claude-code-plugin.git
-cd claude-code-plugin
+git clone https://github.com/trunkhq/trunk-claude-code-plugin.git
+cd trunk-claude-code-plugin
 ```
 
 ```sh
