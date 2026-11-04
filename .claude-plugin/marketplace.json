@@ -1,0 +1,16 @@
+{
+  "name": "trunk",
+  "owner": {
+    "name": "Trunk"
+  },
+  "metadata": {
+    "description": "Official Trunk workflows and MCP connection for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "trunk",
+      "source": "./plugins/claude-code",
+      "description": "Inspect repositories, propose changes, and follow evidence through Trunk."
+    }
+  ]
+}

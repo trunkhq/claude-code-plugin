@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "trunk": {
+      "type": "http",
+      "url": "${TRUNK_MCP_URL:-https://api.trunk.dev/mcp}"
+    }
+  }
+}
