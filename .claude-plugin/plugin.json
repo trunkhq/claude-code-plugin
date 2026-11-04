@@ -1,6 +1,6 @@
 {
   "name": "trunk",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "license": "MIT",
   "description": "Agent-first version control: inspect source, propose changes, and follow checks and decisions through Trunk.",
   "author": {
@@ -13,5 +13,7 @@
     "code-review",
     "mcp"
   ],
-  "repository": "https://github.com/trunkhq/claude-code-plugin"
+  "repository": "https://github.com/trunkhq/claude-code-plugin",
+  "icon": "./icon.png",
+  "privacyPolicyUrl": "https://trunk.dev/privacy"
 }
